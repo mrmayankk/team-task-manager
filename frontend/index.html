@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Team Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logoDot"></div>
+        <div>
+          <h1>Team Task Manager</h1>
+          <div class="muted">Admin & Member dashboards</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="split">
+          <h2>Sign in</h2>
+          <button class="btn" onclick="toggleAuthMode()" id="modeBtn">Use Signup</button>
+        </div>
+        <div style="height:6px"></div>
+
+        <div class="col">
+          <input class="input" id="name" placeholder="Name (signup only)" />
+          <input class="input" id="email" placeholder="Email" />
+          <input class="input" id="password" type="password" placeholder="Password" />
+          <div class="row">
+            <button class="btn primary" onclick="authSubmit()" id="authBtn">Login</button>
+            <button class="btn good" onclick="seedDemo()">Create demo account</button>
+          </div>
+          <div class="row" style="flex-wrap:wrap">
+            <button class="btn" onclick="quickLogin('admin')">Login as Admin </button>
+            <button class="btn" onclick="quickLogin('member')">Login as User </button>
+          </div>
+          <div class="toast muted" id="authMsg"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Quick start</h2>
+        <div class="muted">
+          Admin gets project/team control. Members see only their assigned tasks and can update status.
+        </div>
+        <div style="height:12px"></div>
+        <div class="row">
+          <button class="btn" onclick="goDashboardIfAuthed()">Open dashboard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+{"_id":"-Xo5ODfdYuKjRbMlnuFTW","name":"Demo Member","email":"member@team.local","role":"member","passwordHash":"$2a$10$r8ozMemOVTwPUdd7P3Bpq.fuQ3YoAVrVexF4hYmrlyEYjuStO5XvO","createdAt":1777629444117}
+{"_id":"VvVzBT5gWDdvmjsSJEryT","name":"Demo Admin","email":"demo@team.local","role":"admin","passwordHash":"$2a$10$TWVoo.7q.nn8F4E8oHQC/e1/xa17SlZlYUZn/MaFydlLSBiACUSHu","createdAt":1777628921903}
+{"$$indexCreated":{"fieldName":"email","unique":true,"sparse":false}}

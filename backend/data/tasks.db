@@ -1,0 +1,11 @@
+{"_id":"GEfHOl2x2bEsuddLrTrIN","title":"Implement auth + API","assignedToUserId":"VvVzBT5gWDdvmjsSJEryT","assignedToName":"Demo Admin","status":"Completed","dueDate":1777457615033,"projectId":"SVoxK8IHl45yk4KaMx3NW","createdBy":"VvVzBT5gWDdvmjsSJEryT","projectOwnerId":"VvVzBT5gWDdvmjsSJEryT","createdAt":1777630415033}
+{"_id":"HQEqdnrboyAnJstse_cqs","title":"Design landing page","assignedToUserId":"-Xo5ODfdYuKjRbMlnuFTW","assignedToName":"Demo Member","status":"In Progress","dueDate":1777803215033,"projectId":"SVoxK8IHl45yk4KaMx3NW","createdBy":"VvVzBT5gWDdvmjsSJEryT","projectOwnerId":"VvVzBT5gWDdvmjsSJEryT","createdAt":1777630415033}
+{"_id":"oT_F-hZQvS9UV0LS3vEd7","title":"QA + final checklist","assignedToUserId":"-Xo5ODfdYuKjRbMlnuFTW","assignedToName":"Demo Member","status":"Pending","dueDate":1777544015033,"projectId":"SVoxK8IHl45yk4KaMx3NW","createdBy":"VvVzBT5gWDdvmjsSJEryT","projectOwnerId":"VvVzBT5gWDdvmjsSJEryT","createdAt":1777630415033}
+{"$$indexCreated":{"fieldName":"projectId","unique":false,"sparse":false}}
+{"$$indexCreated":{"fieldName":"status","unique":false,"sparse":false}}
+{"$$deleted":true,"_id":"GEfHOl2x2bEsuddLrTrIN"}
+{"$$deleted":true,"_id":"HQEqdnrboyAnJstse_cqs"}
+{"$$deleted":true,"_id":"oT_F-hZQvS9UV0LS3vEd7"}
+{"_id":"jCSoCR3TvpUT_0Gn33R1q","title":"Design landing page","assignedToUserId":"-Xo5ODfdYuKjRbMlnuFTW","assignedToName":"Demo Member","status":"In Progress","dueDate":1777803542743,"projectId":"SVoxK8IHl45yk4KaMx3NW","createdBy":"VvVzBT5gWDdvmjsSJEryT","projectOwnerId":"VvVzBT5gWDdvmjsSJEryT","createdAt":1777630742745}
+{"_id":"jZHFF969lgjMxh1gWxJcl","title":"Implement auth + API","assignedToUserId":"VvVzBT5gWDdvmjsSJEryT","assignedToName":"Demo Admin","status":"Completed","dueDate":1777457942743,"projectId":"SVoxK8IHl45yk4KaMx3NW","createdBy":"VvVzBT5gWDdvmjsSJEryT","projectOwnerId":"VvVzBT5gWDdvmjsSJEryT","createdAt":1777630742745}
+{"_id":"nFvRYmsLz3EkKssZtfnZw","title":"QA + final checklist","assignedToUserId":"-Xo5ODfdYuKjRbMlnuFTW","assignedToName":"Demo Member","status":"Pending","dueDate":1777544342743,"projectId":"SVoxK8IHl45yk4KaMx3NW","createdBy":"VvVzBT5gWDdvmjsSJEryT","projectOwnerId":"VvVzBT5gWDdvmjsSJEryT","createdAt":1777630742745}

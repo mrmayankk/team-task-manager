@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Member • Team Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+  <div class="bgArt" aria-hidden="true">
+    <svg class="blob b1" viewBox="0 0 600 600" fill="none">
+      <path fill="url(#g1)" d="M457 120c75 60 108 178 73 276-35 98-139 176-245 165-106-11-214-111-218-229-4-118 95-257 218-259 62-1 120 11 172 47Z"/>
+      <defs>
+        <linearGradient id="g1" x1="70" y1="70" x2="550" y2="560" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#93C5FD" stop-opacity=".40"/>
+          <stop offset="1" stop-color="#FCA5A5" stop-opacity=".22"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="shell shellWide">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logoDot"></div>
+        <div>
+          <h1>Member Dashboard</h1>
+          <div class="muted" id="whoami">—</div>
+        </div>
+      </div>
+      <div class="row">
+        <a class="link" href="admin.html">Admin view</a>
+        <button class="btn" onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <div class="layout single">
+      <div class="panel">
+        <div class="panelHead">
+          <div>
+            <div class="title">My tasks</div>
+            <div class="muted">Update status for tasks assigned to you.</div>
+          </div>
+          <span class="badge" id="myCount">0</span>
+        </div>
+
+        <div class="filters">
+          <button class="chip active" id="chipAll" onclick="setMyFilter('')">All</button>
+          <button class="chip" id="chipPending" onclick="setMyFilter('Pending')">Pending</button>
+          <button class="chip" id="chipProgress" onclick="setMyFilter('In Progress')">In Progress</button>
+          <button class="chip" id="chipDone" onclick="setMyFilter('Completed')">Completed</button>
+        </div>
+
+        <div class="listBox" id="myTasks"></div>
+        <div class="toast muted" id="myMsg"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

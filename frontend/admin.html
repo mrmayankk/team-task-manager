@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin • Team Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+  <div class="bgArt" aria-hidden="true">
+    <svg class="blob b1" viewBox="0 0 600 600" fill="none">
+      <path fill="url(#g1)" d="M445 90c80 53 130 170 116 269-15 100-96 184-192 201-96 18-206-31-255-117-50-87-39-210 26-296C205 61 365 36 445 90Z"/>
+      <defs>
+        <linearGradient id="g1" x1="80" y1="60" x2="520" y2="540" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#A5B4FC" stop-opacity=".55"/>
+          <stop offset="1" stop-color="#6EE7B7" stop-opacity=".38"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <svg class="blob b2" viewBox="0 0 600 600" fill="none">
+      <path fill="url(#g2)" d="M478 144c68 70 83 193 30 289-53 95-173 165-279 137-106-28-198-153-183-272 16-119 140-232 265-218 58 7 122 19 167 64Z"/>
+      <defs>
+        <linearGradient id="g2" x1="70" y1="90" x2="540" y2="560" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#93C5FD" stop-opacity=".38"/>
+          <stop offset="1" stop-color="#FDE68A" stop-opacity=".28"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="shell shellWide">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logoDot"></div>
+        <div>
+          <h1>Admin Dashboard</h1>
+          <div class="muted" id="whoami">—</div>
+        </div>
+      </div>
+      <div class="row">
+        <a class="link" href="member.html">Member view</a>
+        <button class="btn" onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <div class="layout">
+      <div class="panel">
+        <div class="panelHead">
+          <div>
+            <div class="title">Projects</div>
+            <div class="muted">Create projects and manage team members.</div>
+          </div>
+          <span class="badge" id="projectCount">0</span>
+        </div>
+        <div class="row">
+          <input class="input" id="projectName" placeholder="New project name" />
+          <button class="btn primary" onclick="createProject()">Create</button>
+        </div>
+        <div class="listBox" id="projectList"></div>
+        <div class="toast muted" id="projectMsg"></div>
+
+        <div class="divider"></div>
+
+        <div id="teamBox">
+          <div class="panelHead">
+            <div>
+              <div class="title">Team</div>
+              <div class="muted">Add/remove members by email.</div>
+            </div>
+            <span class="badge">Admin</span>
+          </div>
+          <div class="row">
+            <input class="input" id="memberEmail" placeholder="member@domain.com" />
+            <button class="btn" onclick="addMember()">Add</button>
+          </div>
+          <div class="listBox" id="memberList"></div>
+          <div class="toast muted" id="memberMsg"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panelHead">
+          <div>
+            <div class="title">Task board</div>
+            <div class="muted" id="activeProjectLabel">Pick a project to load tasks.</div>
+          </div>
+          <span class="badge" id="taskCount">0</span>
+        </div>
+
+        <div class="row wrap">
+          <input class="input grow" id="taskTitle" placeholder="Task title" />
+          <select class="input" id="assigneeSelect" style="max-width:220px"></select>
+          <input class="input" id="dueDate" type="date" style="max-width:180px" />
+          <button class="btn good" onclick="createTask()">Add</button>
+        </div>
+
+        <div class="board">
+          <div class="colCard">
+            <div class="colhead"><div class="muted">Pending</div><div class="badge" id="bPending">0</div></div>
+            <div class="list" id="listPending"></div>
+          </div>
+          <div class="colCard">
+            <div class="colhead"><div class="muted">In Progress</div><div class="badge" id="bProgress">0</div></div>
+            <div class="list" id="listProgress"></div>
+          </div>
+          <div class="colCard">
+            <div class="colhead"><div class="muted">Completed</div><div class="badge" id="bDone">0</div></div>
+            <div class="list" id="listDone"></div>
+          </div>
+        </div>
+
+        <div class="toast muted" id="taskMsg"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

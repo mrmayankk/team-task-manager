@@ -1,0 +1,3 @@
+{"_id":"SVoxK8IHl45yk4KaMx3NW","name":"Launch Sprint","createdBy":"VvVzBT5gWDdvmjsSJEryT","createdAt":1777628921915,"memberIds":["-Xo5ODfdYuKjRbMlnuFTW"]}
+{"$$indexCreated":{"fieldName":"createdBy","unique":false,"sparse":false}}
+{"$$indexCreated":{"fieldName":"memberIds","unique":false,"sparse":false}}
